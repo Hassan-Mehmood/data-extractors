@@ -10,6 +10,8 @@ class Settings(BaseSettings):
 
     DATABASE_URL: Optional[str] = None
     EXPORTS_DIR: str = "exports"
+    OPENAI_API_KEY: str = ""
+    OPENAI_MODEL: str = "gpt-4o-mini"
 
 
 @lru_cache()

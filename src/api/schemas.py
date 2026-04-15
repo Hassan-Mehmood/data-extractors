@@ -7,3 +7,12 @@ class ExtractionResponse(BaseModel):
     columns_discovered: list[str]
     warnings: list[str]
     file_url: str
+
+
+class QueryResponse(BaseModel):
+    success: bool
+    matched_count: int
+    total_count: int
+    columns_discovered: list[str]
+    warnings: list[str]
+    file_url: str
